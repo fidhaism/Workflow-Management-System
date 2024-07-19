@@ -1,0 +1,64 @@
+
+
+Hello everyone,
+
+My name is Fidha, and I am excited to present my project to you today. I have a background in web development, with a strong focus on full-stack development. My expertise lies in building robust and scalable applications using technologies like React, Node.js, Express, and MongoDB. Over the past few months, I have been working on a project that aims to streamline workflow management within organizations. Today, I will be walking you through the various aspects of this project, explaining its architecture, functionality, and the technologies used.
+
+
+
+**Project Overview:**
+
+The project is a Workflow Management Application designed to help organizations manage their projects, tasks, and user roles efficiently. The application provides a user-friendly interface for employees and managers to collaborate on projects, track progress, and manage tasks effectively. It also includes features for user authentication, role-based access control, and statistical reporting.
+
+**Architecture:**
+
+The application is built using a modern web stack:
+
+1. **Frontend:** The user interface is developed using React, a popular JavaScript library for building user interfaces. React's component-based architecture allows for reusable and maintainable UI components.
+
+2. **Backend:** The server-side logic is handled by Express.js, a minimal and flexible Node.js web application framework. Express.js provides robust routing and middleware capabilities, making it ideal for building RESTful APIs.
+
+3. **Database:** MongoDB is used as the database to store all the application data. MongoDB's flexible schema design and scalability make it a perfect choice for managing dynamic data.
+
+**Key Features:**
+
+1. **User Authentication and Authorization:**
+   - The application includes secure user authentication using bcrypt for password hashing.
+   - Users are assigned roles (admin, management, employee) which determine their access level within the application.
+
+2. **Project Management:**
+   - Users can create, view, and manage projects. Each project has attributes like name, description, start and end dates, status, and assigned manager.
+   - The project ID is auto-generated to ensure uniqueness.
+
+3. **Task Management:**
+   - Tasks can be created and assigned to specific projects. Users can update task statuses and track their progress.
+
+4. **Statistical Reporting:**
+   - The application provides statistical insights into user roles and project statuses via dedicated routes that query the database and return summarized data.
+
+5. **File Uploads:**
+   - Users can upload files related to their projects and tasks. The application ensures that only images with specific extensions (png, jpeg, jpg) are accepted, using the multer middleware.
+
+**Implementation Details:**
+
+1. **React Frontend:**
+   - The frontend is built using functional components and hooks for state management (`useState`, `useEffect`).
+   - Form submissions and API interactions are handled using Axios for making HTTP requests.
+
+2. **Express Backend:**
+   - The backend defines various routes for handling user authentication, project management, task management, and statistical reporting.
+   - Middleware functions are used for processing requests and handling errors.
+
+3. **MongoDB and Mongoose:**
+   - Mongoose is used to define schemas and models for users and projects, ensuring data consistency and integrity.
+   - Indexes are created for efficient querying, and validation is implemented to enforce data rules.
+
+**Deployment:**
+
+- The application is deployed on a cloud platform, ensuring it is accessible from anywhere.
+- The deployment process includes building the React application, setting up the Node.js server, and configuring MongoDB.
+- Environment variables are used to manage sensitive information like database credentials and API keys.
+
+**Conclusion:**
+
+This Workflow Management Application demonstrates a comprehensive approach to managing organizational workflows using modern web technologies. The combination of React, Node.js, Express, and MongoDB provides a robust foundation for building scalable and maintainable applications. I hope this presentation gives you a clear understanding of the project's capabilities and the technologies used to implement it. Thank you for your attention, and I look forward to any questions you may have.
